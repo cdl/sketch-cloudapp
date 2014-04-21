@@ -12,4 +12,5 @@ Now, hit `ctrl + cmd + r` when in Sketch, and voila - Cloud.app will upload your
 
 ### Issues
 
-Currently this only works with one artboard. Unfortunately, for some reason, [there's no way to grab the active artboard in the Sketch plugin API](http://bohemiancoding.com/sketch/support/developer/03-reference/MSArtboardGroup.html), but I've gone ahead and [contacted the team](https://twitter.com/cdl/status/458365170520031232) about it (hopefully they get back to me soon!).
+1. Be sure you have Cloud.app open on your computer first! Otherwise, this won't work!
+2. Currently this only works with one artboard. Unfortunately, for some reason, [there's no way to grab the active artboard in the Sketch plugin API](http://bohemiancoding.com/sketch/support/developer/03-reference/MSArtboardGroup.html), but I've gone ahead and [contacted the team](https://twitter.com/cdl/status/458365170520031232) about it (hopefully they get back to me soon!).
