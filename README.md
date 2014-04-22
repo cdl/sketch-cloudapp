@@ -1,4 +1,4 @@
-## :warning: This is kind of broken right now – see [#1](https://github.com/cdl/sketch-cloudapp/issues/1) for details. :warning:
+### :warning: This is kind of broken right now – see [#1](https://github.com/cdl/sketch-cloudapp/issues/1) for details. :warning:
 
 # sketch-cloudapp
 
