@@ -7,10 +7,11 @@
 var manager = [NSFileManager defaultManager]
 var cloud = [SBApplication application:"Cloud"];
 var artboard = [[doc currentPage] currentArtboard];
+var title = [artboard name];
 
 // save export to file in /tmp 
-[doc saveArtboardOrSlice:artboard toFile:"/tmp/export.png"];
-var filePath = [NSURL fileURLWithPath:"/tmp/export.png"];
+[doc saveArtboardOrSlice:artboard toFile:"/tmp/" + title + ".png"];
+var filePath = [NSURL fileURLWithPath:"/tmp/"+ title + ".png"];
 
 // tell CloudApp to upload it
 [cloud upload:filePath];
