@@ -6,7 +6,7 @@
 
 var manager = [NSFileManager defaultManager]
 var cloud = [SBApplication application:"Cloud"];
-var artboard = [[[doc currentPage] artboards] firstObject];
+var artboard = [[doc currentPage] currentArtboard];
 
 // save export to file in /tmp 
 [doc saveArtboardOrSlice:artboard toFile:"/tmp/export.png"];
