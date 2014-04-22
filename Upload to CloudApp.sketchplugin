@@ -6,11 +6,24 @@
 
 var manager = [NSFileManager defaultManager]
 var cloud = [SBApplication application:"Cloud"];
-var artboard = [[doc currentPage] currentArtboard];
-var title = [artboard name];
+
+var page = [doc currentPage];
+var artboard = [page currentArtboard];
+var title = '';
+
+if (artboard) {
+	// if there is an artboard selected, set the title
+	// to the artboard name, and save that
+	title = [artboard name];
+	[doc saveArtboardOrSlice:artboard toFile:"/tmp/" + title + ".png"];
+} else {
+	// otherwise, set the title to "Export", and save the
+	// bounds of the entire page
+	title = 'Export';
+	[doc saveArtboardOrSlice:[page contentBounds] toFile:"/tmp/" + title + ".png"];
+}
 
 // save export to file in /tmp 
-[doc saveArtboardOrSlice:artboard toFile:"/tmp/" + title + ".png"];
 var filePath = [NSURL fileURLWithPath:"/tmp/"+ title + ".png"];
 
 // tell CloudApp to upload it
