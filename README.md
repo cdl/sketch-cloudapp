@@ -1,5 +1,7 @@
 # sketch-cloudapp
 
+# Heads up: this project is no longer maintained. I suggest you use [sketch-upload](https://github.com/jelias/sketch-upload) instead. Thanks for all the stars and support, guys - I just don't have time to maintain this (and no longer use CloudApp). :yellow_heart:
+
 A plugin to upload the current [Sketch.app](http://bohemiancoding.com/sketch/) artboard to [CloudApp](http://www.getcloudapp.com/) with a keystroke.
 
 ### Usage
